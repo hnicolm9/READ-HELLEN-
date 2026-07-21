@@ -1,20 +1,21 @@
 import './app.css';
+import Tarjeta from './components/Tarjeta';
+import header from './components/header';
+import footer from './components/footer';
+
 
 function app (){
-  const items = ['React', 'Node', 'JavaScript'];
-
-    return(
-      <section>
-        <div>Hola Mundo</div>
-        <ul>
-          {
-            items.map((item, index)=>(
-              <li key={index}>{item}</li>
-            ))
-          }
-        </ul>
-      </section>
-    )
+  return(
+        <div >
+          <header/>
+            <main>
+            <Tarjeta />
+            <Tarjeta />
+            <Tarjeta />
+            </main>
+            <footer/>
+        </div>
+    );
 };
-
+ 
 export default app;
