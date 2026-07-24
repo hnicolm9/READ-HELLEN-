@@ -1,21 +1,17 @@
-import './app.css';
-import Tarjeta from './components/Tarjeta';
-import header from './components/header';
-import footer from './components/footer';
+import './App.css';
+import Tarjeta from './components/tarjeta';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
-
-function app (){
+function App (){
   return(
-        <div >
-          <header/>
-            <main>
-            <Tarjeta />
-            <Tarjeta />
-            <Tarjeta />
-            </main>
-            <footer/>
-        </div>
-    );
+    <div>
+      <Navbar />
+      <Hero />
+    </div>
+  ); 
 };
- 
-export default app;
+
+export default App;
